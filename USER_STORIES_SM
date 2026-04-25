@@ -8,49 +8,67 @@
 
 ---
 
-## Admin User Stories
+## Admin User Stories (Done)
 
-| ID | User Story | Acceptance Criteria | Status |
-| --- | --- | --- | --- |
-| US-ADMIN-01 | As an **admin**, I want to authenticate with my credentials to access the back-office. | Login form with validation. Redirect to `/admin` after success. Error messages for invalid credentials. | ✅ Done |
-| US-ADMIN-02 | As an **admin**, I want to view key metrics (students, teachers, parents count) to have an overview of the institution. | Statistics cards on dashboard. Real-time aggregated data from PostgreSQL. | ✅ Done |
-| US-ADMIN-03 | As an **admin**, I want to view the complete student list with their information (ID, name, class, email, phone) to manage enrollments. | Paginated table with relevant columns. Link to each student's detailed page. | ✅ Done |
-| US-ADMIN-04 | As an **admin**, I want to search for a student by name to quickly access their information. | Search field with real-time filtering. | ✅ Done |
-| US-ADMIN-05 | As an **admin**, I want to add a new student via a form to register them in the system. | Form with field validation. Database save via Prisma. Instant display in the list. | ⏳ In Progress |
+**US-ADMIN-01** - ✅ Done
+> As an **admin**, I want to authenticate with my credentials to access the back-office.
+> *Acceptance Criteria: Login form with validation, redirect to `/admin` after success, error messages for invalid credentials.*
+
+**US-ADMIN-02** - ✅ Done
+> As an **admin**, I want to view key metrics (students, teachers, parents count) to have an overview of the institution.
+> *Acceptance Criteria: Statistics cards on dashboard, real-time aggregated data from PostgreSQL.*
+
+**US-ADMIN-03** - ✅ Done
+> As an **admin**, I want to view the complete student list with their information (ID, name, class, email, phone) to manage enrollments.
+> *Acceptance Criteria: Paginated table with relevant columns, link to each student's detailed page.*
+
+**US-ADMIN-04** - ✅ Done
+> As an **admin**, I want to search for a student by name to quickly access their information.
+> *Acceptance Criteria: Search field with real-time filtering.*
+
+**US-ADMIN-05** - ⏳ In Progress
+> As an **admin**, I want to add a new student via a form to register them in the system.
+> *Acceptance Criteria: Form with field validation, database save via Prisma, instant display in the list.*
 
 ---
 
 ## Teacher User Stories
 
-| ID | User Story | Acceptance Criteria | Status |
-| --- | --- | --- | --- |
-| US-TEACH-01 | As a **teacher**, I want to view the list of students in my class to track their results. | Automatic filtering by class. Grades display by subject. | ⏳ In Progress |
-| US-TEACH-02 | As a **teacher**, I want to enter or modify a student's grades to update their report card. | Grade entry form by subject. Automatic average calculation update. | 📋 Planned |
-| US-TEACH-03 | As a **teacher**, I want to mark daily attendance to track student presence. | Interactive calendar. Attendance statistics per student. | 📋 Planned |
+**US-TEACH-01** - ⏳ In Progress
+> As a **teacher**, I want to view the list of students in my class to track their results.
+> *Acceptance Criteria: Automatic filtering by class, grades display by subject.*
+
+**US-TEACH-02** - 📋 Planned
+> As a **teacher**, I want to enter or modify a student's grades to update their report card.
+> *Acceptance Criteria: Grade entry form by subject, automatic average calculation update.*
+
+**US-TEACH-03** - 📋 Planned
+> As a **teacher**, I want to mark daily attendance to track student presence.
+> *Acceptance Criteria: Interactive calendar, attendance statistics per student.*
 
 ---
 
-## Student User Stories
+## Student User Stories (Final)
 
-| ID | User Story | Status |
-| --- | --- | --- |
-| US-STUD-01 | As a **student**, I want to log in and view my report card (subjects, coefficients, average) to track my progress. | 📋 Planned |
-| US-STUD-02 | As a **student**, I want to view my weekly schedule to organize my work. | 📋 Planned |
+**US-STUD-01** - 📋 Planned
+> As a **student**, I want to log in and view my report card (subjects, coefficients, average) to track my progress.
+
+**US-STUD-02** - 📋 Planned
+> As a **student**, I want to view my weekly schedule to organize my work.
 
 ---
 
-## Parent User Stories
+## Parent User Stories (Final)
 
-| ID | User Story | Status |
-| --- | --- | --- |
-| US-PARENT-01 | As a **parent**, I want to access my child's grades and attendance to follow their academic progress. | 📋 Planned |
+**US-PARENT-01** - 📋 Planned
+> As a **parent**, I want to access my child's grades and attendance to follow their academic progress.
 
 ---
 
 ## Legend
 
 | Symbol | Meaning |
-| --- | --- |
+|--------|---------|
 | ✅ Done | Feature complete and tested |
 | ⏳ In Progress | Currently being developed |
 | 📋 Planned | Planned for final submission |
