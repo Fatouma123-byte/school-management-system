@@ -1,0 +1,12 @@
+node_modules/
+.next/
+prisma-client/
+.env
+*.log
+.DS_Store
+dist/
+build/
+ml-service/venv/
+src/generated/
+*.so
+*.so.node
