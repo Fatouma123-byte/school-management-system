@@ -1,0 +1,56 @@
+# User Stories - School Management System
+
+## User Roles
+- **Admin**: System administrator
+- **Teacher**: School teacher
+- **Student**: Student
+- **Parent**: Parent of a student
+
+---
+
+## Admin User Stories
+
+| ID | User Story | Acceptance Criteria | Status |
+|----|------------|---------------------|--------|
+| US-ADMIN-01 | As an **admin**, I want to authenticate with my credentials to access the back-office. | – Login form with validation<br>– Redirect to `/admin` after success<br>– Error messages for invalid credentials | ✅ Done |
+| US-ADMIN-02 | As an **admin**, I want to view key metrics (students, teachers, parents count) to have an overview of the institution. | – Statistics cards on dashboard<br>– Real-time aggregated data from PostgreSQL | ✅ Done |
+| US-ADMIN-03 | As an **admin**, I want to view the complete student list with their information (ID, name, class, email, phone) to manage enrollments. | – Paginated table with relevant columns<br>– Link to each student's detailed page | ✅ Done |
+| US-ADMIN-04 | As an **admin**, I want to search for a student by name to quickly access their information. | – Search field with real-time filtering | ✅ Done |
+| US-ADMIN-05 | As an **admin**, I want to add a new student via a form to register them in the system. | – Form with field validation<br>– Database save via Prisma<br>– Instant display in the list | ⏳ In Progress |
+
+---
+
+## Teacher User Stories
+
+| ID | User Story | Acceptance Criteria | Status |
+|----|------------|---------------------|--------|
+| US-TEACH-01 | As a **teacher**, I want to view the list of students in my class to track their results. | – Automatic filtering by class<br>– Grades display by subject | ⏳ In Progress |
+| US-TEACH-02 | As a **teacher**, I want to enter or modify a student's grades to update their report card. | – Grade entry form by subject<br>– Automatic average calculation update | 📋 Planned |
+| US-TEACH-03 | As a **teacher**, I want to mark daily attendance to track student presence. | – Interactive calendar<br>– Attendance statistics per student | 📋 Planned |
+
+---
+
+## Student User Stories
+
+| ID | User Story | Status |
+|----|------------|--------|
+| US-STUD-01 | As a **student**, I want to log in and view my report card (subjects, coefficients, average) to track my progress. | 📋 Planned |
+| US-STUD-02 | As a **student**, I want to view my weekly schedule to organize my work. | 📋 Planned |
+
+---
+
+## Parent User Stories
+
+| ID | User Story | Status |
+|----|------------|--------|
+| US-PARENT-01 | As a **parent**, I want to access my child's grades and attendance to follow their academic progress. | 📋 Planned |
+
+---
+
+## Legend
+
+| Symbol | Meaning |
+|--------|---------|
+| ✅ Done | Feature complete and tested |
+| ⏳ In Progress | Currently being developed |
+| 📋 Planned | Planned for final submission |
